@@ -5,4 +5,6 @@ def find_coins_greedy(amount, coins=[50, 25, 10, 5, 2, 1]):
         if count:
             result[coin] = count
             amount -= coin * count
+            if amount == 0:
+                break
     return result

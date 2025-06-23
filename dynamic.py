@@ -13,3 +13,5 @@ def find_min_coins(amount, coins=[1, 2, 5, 10, 25, 50]):
         result[c] = result.get(c, 0) + 1
         amount -= c
     return result
+
+
